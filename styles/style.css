@@ -267,6 +267,9 @@ ol {
   height: 298px;
   width: 399px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .content__list-item:not(:last-child) {
@@ -333,12 +336,16 @@ ol {
   font-size: 18px;
   line-height: 16.2px;
   text-overflow: ellipsis;
-  overflow: hidden;
   text-wrap: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
-  object-fit: fill;
+  object-fit: cover;
   object-position: center;
 }
